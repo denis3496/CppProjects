@@ -1,0 +1,6 @@
+23:44:59 **** Incremental Build of configuration Debug for project MST ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o COther.o "..\\COther.cpp" 
+g++ -o MST.exe CGraph.o COther.o main.o 
+Info: Nothing to build for MST
+Info: Nothing to build for MST

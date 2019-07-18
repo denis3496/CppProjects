@@ -1,0 +1,13 @@
+00:41:08 **** Incremental Build of configuration Debug for project PointXY+FullConstCorrect ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp:43:1: warning: null character(s) ignored
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+ ^
+..\main.cpp: In member function 'point& point::operator+(const point&)':
+..\main.cpp:11:23: error: invalid initialization of non-const reference of type 'point&' from an rvalue of type 'point'
+          point& sum = point(p1.x+ this->x, p1.y + this->y);
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+00:41:09 Build Failed. 1 errors, 1 warnings. (took 497ms)
+

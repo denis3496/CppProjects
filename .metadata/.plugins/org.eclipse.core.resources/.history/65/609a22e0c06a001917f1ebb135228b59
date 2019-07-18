@@ -1,0 +1,42 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 29 kwi 2019
+ *      Author: Denis
+ */
+#include <iostream>
+#include <cstdint>
+
+using namespace std;
+
+class point{
+public:
+	void setx(double v){
+		x=v;
+	}
+	double getx(){
+		return x;
+	}
+	double x,y;
+};
+
+point operator+(point&p1,point&p2){ //pass by reference
+	point sum = {
+			p1.x+p2.x, p1.y+p2.y
+	};
+	return sum;
+}
+ostream& operator<<(ostream& out, const point& p){//pass by reference
+//funkcja wypisania jest konieczna przy tworzeniu wlasnych operatorow
+	out<<"("<<p.x<<","<<p.y<<")";
+	return out;
+}
+
+int main(){
+point a={2.3,3.3}, b={2.3,4.4},c;
+
+cout<<"a="<<a<<", b="<<b<<endl;
+cout<<"sum="<<a+b<<endl;
+
+}
+

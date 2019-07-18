@@ -1,0 +1,74 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 29 kwi 2019
+ *      Author: Denis
+ */
+#include <iostream>
+#include <cstdint>
+
+using namespace std;
+
+class point{
+public:
+	point(){
+		setx(0);
+		sety(0);
+	}
+
+	void setx(double v){
+		x=v;
+	}
+	void sety(double v){
+		y=v;
+	}
+	double getx(){// te dwie funkcje pozwalaja modyfikowac wartosci private!
+		return x;
+	}
+	double gety(){//!
+		return y;
+	}
+
+	const point& operator+(const point& p1) { //tzw. member function czyli istnieje w deklaracji klasy
+		const point& sum = point( p1.x + this->x,p1.y + this->y );
+		return sum;
+	}
+
+	point& operator+(const point& p1)
+
+	     {
+
+	         const point& sum = point( p1.x + this->x,p1.y + this->y );
+
+	         return sum;
+
+	     }
+
+	ostream& operator<<(ostream& out, point& p){//pass by reference
+	//funkcja wypisania jest konieczna przy tworzeniu wlasnych operatorow
+		out<<"("<<p.getx()<<","<<p.gety()<<")";
+		return out;
+	}
+private:
+	double x,y;
+};
+
+//point::point(){
+//	setx(0);
+//	sety(0);
+//}
+
+
+int main(){
+point a,b;
+//a.setx(2.3);
+//a.sety(3.3);
+b.setx(2.3);
+b.sety(4.4);
+
+
+cout<<"a="<<a<<", b="<<b<<endl;
+cout<<"sum="<<a+b<<endl;
+
+}
+

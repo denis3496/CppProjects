@@ -1,0 +1,38 @@
+/*
+ * slist.h
+ *
+ *  Created on: 27 cze 2019
+ *      Author: Denis
+ */
+
+#ifndef CLIST_H_
+#define CLIST_H_
+
+#include "CGraph.h"
+
+
+struct slistelem {
+	char data;
+	slistelem* next;
+};
+
+class CList  // singly linked list
+{
+	public:
+		CList(CGraph& graph);
+		~CList();
+		void prepend(char c); // adds to front of slist
+		void del();
+		slistelem* first() const { return h; }
+		void print() const;
+		void release();
+
+	protected:
+		CGraph* pprog;
+		int* dist;			//index-vertex, value- vertices connected to index-vertex
+		int* edges;			//index-vertex, value- vertex closest to the index-vertex
+		slistelem* h; // head of slist
+};
+
+
+#endif /* CLIST_H_ */

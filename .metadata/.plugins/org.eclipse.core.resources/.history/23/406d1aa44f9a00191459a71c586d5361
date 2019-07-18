@@ -1,0 +1,64 @@
+/*
+ * slist.cpp
+ *
+ *  Created on: 27 cze 2019
+ *      Author: Denis
+ */
+#include "CList.h"	//both
+
+#include <cstdio>
+#include <list>
+#include <cassert> //for asser
+#include "CGraph.h"
+
+CList::CList()
+{
+h=0;
+}
+
+CList::~CList()
+{
+	release();
+	//cout << "destructor invoked" << endl;
+	release();
+}
+
+void CList::prepend(char c)
+{
+	slistelem* temp = new slistelem;// create element
+	assert(temp != 0);	//checks this condition. if not met- aborts the execution
+	temp -> next = h; // link to slist
+	temp -> data = c;
+	h = temp; // update head of slist
+}
+
+void CList::del()
+{
+	slistelem* temp = h;
+	h = h -> next; // presumes nonempty slist
+	delete temp;
+}
+
+/*void CList::print() const // object is unchanged
+{
+	slistelem* temp = h;
+	while (temp != 0) { // detect end of slist
+		cout << temp -> data << " -> ";
+		temp = temp -> next;
+	}
+	cout << "\n###" << endl;
+}*/
+
+char *CList::Drukuj()
+{
+	slistelem* temp = h;
+	return temp->data;
+}
+
+
+	// Elements returned to the heap
+void CList::release()
+{
+	while (h != 0)
+		del();
+}

@@ -1,0 +1,37 @@
+/*
+ * graph.h
+ *
+ *  Created on: 27 cze 2019
+ *      Author: Denis
+ */
+
+#ifndef CGRAPH_H_
+#define CGRAPH_H_
+
+#include "CList.h"			//just one
+class CList; 				//forward declaration !!!! Visual tego nie potrzebuje
+
+class CGraph
+{ // singly linked list
+	public:
+		CGraph(CList& list);
+		~CGraph();
+		inline int ComputeValue();
+		inline double ComputeProbability();
+		void makeGraph();
+		void calcDistances();
+		void init();
+
+	protected:
+		CList* pprog1;
+		int** costGraph;	//graph
+		int size;
+		double density;
+		int* dist;			//index-vertex, value- vertices connected to index-vertex
+		int* edges;			//index-vertex, value- vertex closest to the index-vertex
+};
+
+
+
+
+#endif /* CGRAPH_H_ */

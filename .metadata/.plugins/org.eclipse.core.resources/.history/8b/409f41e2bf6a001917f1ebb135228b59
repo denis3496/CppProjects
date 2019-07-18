@@ -1,0 +1,27 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 29 kwi 2019
+ *      Author: Denis
+ */
+#include <iostream>
+#include <cstdint>
+
+using namespace std;
+
+class point{
+public:
+	void setx(double v){
+		x=v;
+	}
+	double getx(){
+		return x;
+	}
+private:
+	double x,y;
+};
+
+int main(){
+point a=
+}
+

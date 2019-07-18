@@ -1,0 +1,38 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 27 cze 2019
+ *      Author: Denis
+ */
+#include <cstdlib>	//all three needed for usage of srand
+#include <iostream>
+#include <ctime>
+
+#include "locale.h" //for setlocale
+#include "CGraph.h"
+#include "CList.h"
+
+void PrintList()  // object is unchanged
+{
+	slistelem* temp = h;
+	while (temp != 0) { // detect end of slist
+		cout << temp -> data << " -> ";
+		temp = temp -> next;
+	}
+	cout << "\n###" << endl;
+}
+
+int main()
+{
+	using namespace std;
+	setlocale(LC_ALL, "polish");
+	srand(time(0));
+
+cout<<"unut"<<endl;
+
+CList obj1;
+
+
+CGraph objMain(obj1);
+
+}

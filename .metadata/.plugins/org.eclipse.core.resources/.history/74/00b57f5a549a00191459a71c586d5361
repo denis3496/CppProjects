@@ -1,0 +1,62 @@
+/*
+ * main.cpp
+ *
+ *  Created on: 27 cze 2019
+ *      Author: Denis
+ */
+#include <cstdlib>											//all three needed for usage of srand
+#include <iostream>
+#include <fstream>											//usage of extern files
+#include <ctime>
+
+#include "locale.h" 										//for setlocale
+#include "CGraph.h"
+#include "CList.h"
+
+using namespace std;
+
+int main()
+{
+	ofstream testList,testGraph;
+	setlocale(LC_ALL, "polish");
+	srand(time(0));
+
+	CList obj1;
+	CGraph objMain(obj1);
+
+	testList.open("tList.txt");
+	slistelem* temp = obj1.first();
+
+	while (temp != 0)
+	{ 															// detect end of slist
+		testList << temp -> data << " -> ";
+		temp = temp -> next;
+	}
+	testList << "\n###" << endl;
+
+
+	int i=0;
+	testGraph.open("tGraph.txt");
+	int siz=testGraph.Size();
+
+	testGraph<<"  |";
+		while(i<siz){
+			testGraph<<i<<"|";
+			i++;
+		}
+		testGraph<<endl;
+		for(i=0;i<siz;++i){
+			if(i<10)testGraph<<i<<" |";
+			else testGraph<<i<<"|";
+			for(int j=0;j<objMain.size;++j){
+				if(j>10) testGraph<<" ";
+				testGraph<<objMain.costGraph[i][j]<<" ";
+			}
+			testGraph<<endl;
+		}
+
+	testList.close();
+	testGraph.close();
+
+	return 0;
+}

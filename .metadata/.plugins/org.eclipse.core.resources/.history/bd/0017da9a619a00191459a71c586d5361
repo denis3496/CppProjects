@@ -1,0 +1,75 @@
+/*
+ * slist.cpp
+ *
+ *  Created on: 27 cze 2019
+ *      Author: Denis
+ */
+#include "CList.h"	//both
+#include "CGraph.h"
+
+#include <cstdio>
+#include <list>
+#include <cassert> //for asser
+#include <climits>	//int_max int_min
+#include "CGraph.h"
+
+CList::CList(CGraph& graph) :pprog( &graph )
+{
+	h=0;
+	dist=new int[pprog->Size()];
+
+	for(int i=0;i<pprog->Size()-1;i++){
+//		dist[i]=new int;
+//		edges[i]=new int;
+//		dist[i]=INT_MAX;
+//		edges[i]=NULL;
+	}
+
+//pick vertex e.g. 0
+dist[0]=0;
+
+while(i<pprog->Size()){
+	MST[j+1]=edges[i];
+}
+}
+
+CList::~CList()
+{
+	release();
+	//cout << "destructor invoked" << endl;
+	release();
+}
+
+void CList::prepend(char c)
+{
+	slistelem* temp = new slistelem;// create element
+	 assert(temp != 0);	//checks this condition. if not met- aborts the execution
+	temp -> next = h; // link to slist
+	temp -> data = c;
+	h = temp; // update head of slist
+}
+
+void CList::del()
+{
+	slistelem* temp = h;
+	h = h -> next; // presumes nonempty slist
+	delete temp;
+}
+
+	// Elements returned to the heap
+void CList::release()
+{
+	while (h != 0)
+		del();
+}
+
+void CList::calcDistances(){
+//	for(int i=0;i<;i++){
+//			for(int j=0;j<sizeof(costGraph);j++){
+//				if(costGraph[i][j]!=0 && costGraph[i][j]<dist[j]){
+//					dist[j]=costGraph[i][j];
+//					edges[j]=i;
+//			}
+//		}
+//	}
+}
