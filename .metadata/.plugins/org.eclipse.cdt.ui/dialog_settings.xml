@@ -1,65 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="Default C++ source template" key="LastUsedSourceTemplate"/>
-	<item value="Default C++ header template" key="LastUsedHeaderTemplate"/>
+	<item key="LastUsedSourceTemplate" value="Default C++ source template"/>
+	<item key="LastUsedHeaderTemplate" value="Default C++ header template"/>
 	<section name="org.eclipse.cdt.ui.OPEN_ACTION_SELECTION_DIALOG_SECTION">
-		<item value="457" key="DIALOG_WIDTH"/>
-		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-24|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
-		<item value="452" key="DIALOG_HEIGHT"/>
-		<item value="462" key="DIALOG_X_ORIGIN"/>
-		<item value="141" key="DIALOG_Y_ORIGIN"/>
+		<item key="DIALOG_WIDTH" value="457"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-24|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		<item key="DIALOG_HEIGHT" value="452"/>
+		<item key="DIALOG_X_ORIGIN" value="462"/>
+		<item key="DIALOG_Y_ORIGIN" value="141"/>
 	</section>
 	<section name="CResourceRenameRefactoringInputPage">
-		<item value="true" key="updateReferences"/>
+		<item key="updateReferences" value="true"/>
 	</section>
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
 	</section>
 	<section name="NewClassWizardPage">
-		<item value="true" key="stubSelected1"/>
-		<item value="false" key="stubVirtual1"/>
-		<item value="false" key="namespaceSelected"/>
-		<item value="false" key="stubInline0"/>
-		<item value="false" key="stubInline1"/>
-		<item value="" key="namespace"/>
-		<item value="false" key="testFileSelected"/>
-		<item value="true" key="stubSelected0"/>
+		<item key="stubSelected1" value="true"/>
+		<item key="stubVirtual1" value="false"/>
+		<item key="namespaceSelected" value="false"/>
+		<item key="stubInline0" value="false"/>
+		<item key="stubInline1" value="false"/>
+		<item key="namespace" value=""/>
+		<item key="testFileSelected" value="false"/>
+		<item key="stubSelected0" value="true"/>
 	</section>
 	<section name="org.eclipse.cdt.internal.ui.wizards.classwizard.NamespaceSelectionDialogSettings">
-		<item value="false" key="show_enums"/>
-		<item value="false" key="show_unions"/>
-		<item value="false" key="show_macros"/>
-		<item value="false" key="show_classes"/>
-		<item value="false" key="show_functions"/>
-		<item value="false" key="show_lowlevel"/>
-		<item value="true" key="show_namespaces"/>
-		<item value="false" key="show_enumerators"/>
-		<item value="false" key="show_structs"/>
-		<item value="481" key="x"/>
-		<item value="406" key="width"/>
-		<item value="0" key="y"/>
-		<item value="false" key="show_typedefs"/>
-		<item value="false" key="show_variables"/>
-		<item value="631" key="height"/>
+		<item key="show_enums" value="false"/>
+		<item key="show_unions" value="false"/>
+		<item key="show_macros" value="false"/>
+		<item key="show_classes" value="false"/>
+		<item key="show_functions" value="false"/>
+		<item key="show_lowlevel" value="false"/>
+		<item key="show_namespaces" value="true"/>
+		<item key="show_enumerators" value="false"/>
+		<item key="show_structs" value="false"/>
+		<item key="x" value="481"/>
+		<item key="width" value="406"/>
+		<item key="y" value="0"/>
+		<item key="show_typedefs" value="false"/>
+		<item key="show_variables" value="false"/>
+		<item key="height" value="631"/>
 	</section>
 	<section name="completion_proposal_size">
-		<item value="216" key="size.y"/>
-		<item value="774" key="size.x"/>
+		<item key="size.y" value="216"/>
+		<item key="size.x" value="774"/>
 	</section>
 	<section name="org.eclipse.cdt.internal.ui.wizards.classwizard.NewBaseClassSelectionDialogSettings">
-		<item value="false" key="show_enums"/>
-		<item value="false" key="show_unions"/>
-		<item value="false" key="show_macros"/>
-		<item value="true" key="show_classes"/>
-		<item value="false" key="show_functions"/>
-		<item value="true" key="show_lowlevel"/>
-		<item value="false" key="show_namespaces"/>
-		<item value="false" key="show_enumerators"/>
-		<item value="false" key="show_structs"/>
-		<item value="476" key="x"/>
-		<item value="417" key="width"/>
-		<item value="0" key="y"/>
-		<item value="false" key="show_typedefs"/>
-		<item value="false" key="show_variables"/>
-		<item value="690" key="height"/>
+		<item key="show_enums" value="false"/>
+		<item key="show_unions" value="false"/>
+		<item key="show_macros" value="false"/>
+		<item key="show_classes" value="true"/>
+		<item key="show_functions" value="false"/>
+		<item key="show_lowlevel" value="true"/>
+		<item key="show_namespaces" value="false"/>
+		<item key="show_enumerators" value="false"/>
+		<item key="show_structs" value="false"/>
+		<item key="x" value="476"/>
+		<item key="width" value="417"/>
+		<item key="y" value="0"/>
+		<item key="show_typedefs" value="false"/>
+		<item key="show_variables" value="false"/>
+		<item key="height" value="690"/>
 	</section>
 </section>

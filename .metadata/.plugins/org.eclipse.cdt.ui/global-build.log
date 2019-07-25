@@ -1,6 +1,17 @@
-23:44:59 **** Incremental Build of configuration Debug for project MST ****
+04:55:54 **** Incremental Build of configuration Debug for project VectorBeispiel ****
 Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o COther.o "..\\COther.cpp" 
-g++ -o MST.exe CGraph.o COther.o main.o 
-Info: Nothing to build for MST
-Info: Nothing to build for MST
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:26:12: error: no match for 'operator[]' (operand types are 'std::vector<int>' and 'std::istream_iterator<int>')
+   sum+=data[i];
+            ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\vector:64:0,
+                 from ..\main.cpp:10:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h:780:7: note: candidate: std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](std::vector<_Tp, _Alloc>::size_type) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::reference = int&; std::vector<_Tp, _Alloc>::size_type = unsigned int]
+       operator[](size_type __n) _GLIBCXX_NOEXCEPT
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h:780:7: note:   no known conversion for argument 1 from 'std::istream_iterator<int>' to 'std::vector<int>::size_type {aka unsigned int}'
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h:795:7: note: candidate: std::vector<_Tp, _Alloc>::const_reference std::vector<_Tp, _Alloc>::operator[](std::vector<_Tp, _Alloc>::size_type) const [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::const_reference = const int&; std::vector<_Tp, _Alloc>::size_type = unsigned int]
+       operator[](size_type __n) const _GLIBCXX_NOEXCEPT
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h:795:7: note:   no known conversion for argument 1 from 'std::istream_iterator<int>' to 'std::vector<int>::size_type {aka unsigned int}'

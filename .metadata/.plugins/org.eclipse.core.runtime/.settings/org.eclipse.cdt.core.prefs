@@ -1,2 +1,9 @@
+build.all.configs.enabled=false
+build.proj.ref.configs.enabled=false
 eclipse.preferences.version=1
+environment/workspace/append=true
+environment/workspace/appendContributed=true
+errorparser.default.ids=org.eclipse.cdt.autotools.core.ErrorParser;org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.VCErrorParser;org.eclipse.cdt.core.CWDLocator;org.eclipse.cdt.core.MakeErrorParser
+language.settings.providers.workspace.prefs.toggle=false
+macros/workspace=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<macros>\r\n<stringMacro name\="Path" type\="VALUE_TEXT" value\="C\:/MinGW/mingw64/bin;C\:/Program Files/Java/jre1.8.0_221/bin/server;C\:/Program Files/Java/jre1.8.0_221/bin;C\:/Program Files/Java/jre1.8.0_221/lib/amd64;C\:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C\:\\ProgramData\\Oracle\\Java\\javapath;C\:\\Program Files\\Common Files\\Microsoft Shared\\Windows Live;C\:\\Program Files (x86)\\Common Files\\Microsoft Shared\\Windows Live;C\:\\WINDOWS\\system32;C\:\\WINDOWS;C\:\\WINDOWS\\System32\\Wbem;C\:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C\:\\Program Files (x86)\\Windows Live\\Shared;C\:\\Program Files (x86)\\Toshiba\\Bluetooth Toshiba Stack\\sys\\;C\:\\Program Files (x86)\\Toshiba\\Bluetooth Toshiba Stack\\sys\\x64\\;c\:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;c\:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;C\:\\WINDOWS\\System32\\OpenSSH\\;C\:\\Program Files\\Git\\cmd;C\:\\Users\\Foerster\\AppData\\Local\\Microsoft\\WindowsApps;;C\:\\Users\\Foerster\\Downloads\\eclipse-cpp-2019-06-R-win32-x86_64\\eclipse;"/>\r\n</macros>\r\n
 org.eclipse.cdt.core.showSourceRootsAtTopLevelOfProject=true

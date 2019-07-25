@@ -1,9 +1,12 @@
 applyBackground=false
-approved.defs.file.last.changed.time=1554843829000
-configurationInstallLocation=/C\:/eclipse/
+approved.defs.file.last.changed.time=1563840441000
+codemix.dont.show.upsell.until=1565308174507
+configurationInstallLocation=/C\:/Users/Foerster/Downloads/eclipse-cpp-2019-06-R-win32-x86_64/eclipse/
 eclipse.preferences.version=1
 iconcolormode=primary
-last.download.attempt.time=1562520667745
-lastConfiguration=1562433340968
-newinstall=true
+iconreplacement=false
+last.download.attempt.time=1564015173316
+lastConfiguration=1564016459997
+newinstall=false
+showWelcomeDialog=false
 workbench.theme=Dark Gray

@@ -125,7 +125,7 @@ void COther::enterBegin(){
 	int begin;
 	cout<<"podaj poczatek.."<<endl;
 	cin>>begin;					//pick vertex e.g. 0 and start with it. very importnat
-	begin=3;
+	//begin=3;
 	currVerDistance[begin]=0; 	//vertex=begin will be picked by the algorithm as the first because its distance (loop)=0;
 	cout<<"podano:"<<begin<<endl;
 	closestEdge[begin]=-1;		//closest point to begin is -1. Why? They say there has to be first node created before the algorithm is startex
