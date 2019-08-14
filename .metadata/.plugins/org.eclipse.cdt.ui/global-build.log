@@ -1,17 +1,1339 @@
-04:55:54 **** Incremental Build of configuration Debug for project VectorBeispiel ****
+18:48:48 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o ShakespeareQuicksort.exe main.o 
+Info: Nothing to build for ShakespeareQuicksort
+18:57:49 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
 Info: Internal Builder is used for build
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
 ..\main.cpp: In function 'int main()':
-..\main.cpp:26:12: error: no match for 'operator[]' (operand types are 'std::vector<int>' and 'std::istream_iterator<int>')
-   sum+=data[i];
+..\main.cpp:40:25: error: wrong number of template arguments (2, should be 1)
+        function <int,int> ( &tolower ) //wrapper <Argument type,Result type> (pointer to a function to create a wrapper for)-&function
+                         ^
+In file included from ..\main.cpp:19:0:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:1526:11: note: provided for 'template<class _Signature> class std::function'
+     class function;
+           ^~~~~~~~
+18:58:32 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:40:22: error: expected primary-expression before 'tolower'
+        function <int>tolower //wrapper <Argument type,Result type> (pointer to a function to create a wrapper for)-&function
+                      ^~~~~~~
+18:59:07 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:40:28: error: expected primary-expression before 'tolower'
+        function <void(int)>tolower //wrapper <Argument type,Result type> (pointer to a function to create a wrapper for)-&function
+                            ^~~~~~~
+19:01:00 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:40:29: error: overloaded function with no contextual type information
+        function <int(tolower)>; //wrapper <Argument type,Result type> (pointer to a function to create a wrapper for)-&function
+                             ^
+..\main.cpp:40:30: error: template argument 1 is invalid
+        function <int(tolower)>; //wrapper <Argument type,Result type> (pointer to a function to create a wrapper for)-&function
+                              ^
+..\main.cpp:41:8: error: expected primary-expression before ')' token
+        );
+        ^
+19:01:42 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:40:29: error: overloaded function with no contextual type information
+        function <int(tolower)> //wrapper <Argument type,Result type> (pointer to a function to create a wrapper for)-&function
+                             ^
+..\main.cpp:40:30: error: template argument 1 is invalid
+        function <int(tolower)> //wrapper <Argument type,Result type> (pointer to a function to create a wrapper for)-&function
+                              ^
+19:02:37 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:40:28: error: expected primary-expression before '&' token
+        function <void(int)>&tolower //wrapper <Argument type,Result type> (pointer to a function to create a wrapper for)-&function
+                            ^
+19:02:44 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:40:28: error: expected primary-expression before 'tolower'
+        function <void(int)>tolower //wrapper <Argument type,Result type> (pointer to a function to create a wrapper for)-&function
+                            ^~~~~~~
+19:05:07 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:40:32: error: expected primary-expression before 'tolower'
+        function <void(int,int)>tolower //wrapper <Argument type,Result type> (pointer to a function to create a wrapper for)-&function
+                                ^~~~~~~
+19:05:32 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o ShakespeareQuicksort.exe main.o 
+19:05:55 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:40:18: error: no matching function for call to 'ref(<unresolved overloaded function type>)'
+       ref(tolower) //wrapper <Argument type,Result type> (pointer to a function to create a wrapper for)-&function
+                  ^
+In file included from ..\main.cpp:19:0:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:473:5: note: candidate: template<class _Tp> std::reference_wrapper<_Tp> std::ref(_Tp&)
+     ref(_Tp& __t) noexcept
+     ^~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:473:5: note:   template argument deduction/substitution failed:
+..\main.cpp:40:18: note:   couldn't deduce template parameter '_Tp'
+       ref(tolower) //wrapper <Argument type,Result type> (pointer to a function to create a wrapper for)-&function
+                  ^
+In file included from ..\main.cpp:19:0:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:483:10: note: candidate: template<class _Tp> void std::ref(const _Tp&&) <deleted>
+     void ref(const _Tp&&) = delete;
+          ^~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:483:10: note:   template argument deduction/substitution failed:
+..\main.cpp:40:18: note:   couldn't deduce template parameter '_Tp'
+       ref(tolower) //wrapper <Argument type,Result type> (pointer to a function to create a wrapper for)-&function
+                  ^
+In file included from ..\main.cpp:19:0:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:491:5: note: candidate: template<class _Tp> std::reference_wrapper<_Tp> std::ref(std::reference_wrapper<_Tp>)
+     ref(reference_wrapper<_Tp> __t) noexcept
+     ^~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:491:5: note:   template argument deduction/substitution failed:
+..\main.cpp:40:18: note:   mismatched types 'std::reference_wrapper<_Tp>' and 'int (__attribute__((__cdecl__)) *)(int)'
+       ref(tolower) //wrapper <Argument type,Result type> (pointer to a function to create a wrapper for)-&function
+                  ^
+..\main.cpp:40:18: note:   couldn't deduce template parameter '_Tp'
+19:06:51 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:40:34: error: wrong number of template arguments (2, should be 1)
+        reference_wrapper <int,int> ( &tolower ) //wrapper <Argument type,Result type> (pointer to a function to create a wrapper for)-&function
+                                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\move.h:57:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\nested_exception.h:40,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\exception:171,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:39,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\main.cpp:14:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\type_traits:2139:11: note: provided for 'template<class _Tp> class std::reference_wrapper'
+     class reference_wrapper;
+           ^~~~~~~~~~~~~~~~~
+19:07:23 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:40:34: error: wrong number of template arguments (2, should be 1)
+        reference_wrapper <int,int> ref( &tolower ) //wrapper <Argument type,Result type> (pointer to a function to create a wrapper for)-&function
+                                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\move.h:57:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\nested_exception.h:40,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\exception:171,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:39,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\main.cpp:14:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\type_traits:2139:11: note: provided for 'template<class _Tp> class std::reference_wrapper'
+     class reference_wrapper;
+           ^~~~~~~~~~~~~~~~~
+19:07:40 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:40:32: error: expected primary-expression before 'ref'
+        reference_wrapper <int> ref( &tolower ) //wrapper <Argument type,Result type> (pointer to a function to create a wrapper for)-&function
+                                ^~~
+19:09:28 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:40:8: error: 'funtion' was not declared in this scope
+        funtion <void()> tolower//wrapper <Argument type,Result type> (pointer to a function to create a wrapper for)-&function
+        ^~~~~~~
+19:09:39 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:40:26: error: expected primary-expression before 'tolower'
+        function <void()> tolower//wrapper <Argument type,Result type> (pointer to a function to create a wrapper for)-&function
+                          ^~~~~~~
+19:14:34 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:36:26: error: conversion from '<unresolved overloaded function type>' to non-scalar type 'std::function<void()>' requested
+   function <void()> lwo= tolower;
+                          ^~~~~~~
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\main.cpp:15:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h: In instantiation of '_OIter std::transform(_IIter, _IIter, _OIter, _UnaryOperation) [with _IIter = __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >; _OIter = __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >; _UnaryOperation = std::function<void()>]':
+..\main.cpp:42:8:   required from here
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: error: no match for call to '(std::function<void()>) (char&)'
+  *__result = __unary_op(*__first);
+              ~~~~~~~~~~^~~~~~~~~~
+In file included from ..\main.cpp:19:0:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:2122:5: note: candidate: _Res std::function<_Res(_ArgTypes ...)>::operator()(_ArgTypes ...) const [with _Res = void; _ArgTypes = {}]
+     function<_Res(_ArgTypes...)>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:2122:5: note:   candidate expects 0 arguments, 1 provided
+19:14:49 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:36:29: error: conversion from '<unresolved overloaded function type>' to non-scalar type 'std::function<void(int)>' requested
+   function <void(int)> lwo= tolower;
+                             ^~~~~~~
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\main.cpp:15:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h: In instantiation of '_OIter std::transform(_IIter, _IIter, _OIter, _UnaryOperation) [with _IIter = __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >; _OIter = __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >; _UnaryOperation = std::function<void(int)>]':
+..\main.cpp:42:8:   required from here
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:12: error: void value not ignored as it ought to be
+  *__result = __unary_op(*__first);
+  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+19:17:21 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:41:15: error: no matching function for call to 'ref(<unresolved overloaded function type>)'
+    ref(tolower)  //tolower doesnt work on the whole string.
+               ^
+In file included from ..\main.cpp:19:0:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:473:5: note: candidate: template<class _Tp> std::reference_wrapper<_Tp> std::ref(_Tp&)
+     ref(_Tp& __t) noexcept
+     ^~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:473:5: note:   template argument deduction/substitution failed:
+..\main.cpp:41:15: note:   couldn't deduce template parameter '_Tp'
+    ref(tolower)  //tolower doesnt work on the whole string.
+               ^
+In file included from ..\main.cpp:19:0:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:483:10: note: candidate: template<class _Tp> void std::ref(const _Tp&&) <deleted>
+     void ref(const _Tp&&) = delete;
+          ^~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:483:10: note:   template argument deduction/substitution failed:
+..\main.cpp:41:15: note:   couldn't deduce template parameter '_Tp'
+    ref(tolower)  //tolower doesnt work on the whole string.
+               ^
+In file included from ..\main.cpp:19:0:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:491:5: note: candidate: template<class _Tp> std::reference_wrapper<_Tp> std::ref(std::reference_wrapper<_Tp>)
+     ref(reference_wrapper<_Tp> __t) noexcept
+     ^~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:491:5: note:   template argument deduction/substitution failed:
+..\main.cpp:41:15: note:   mismatched types 'std::reference_wrapper<_Tp>' and 'int (__attribute__((__cdecl__)) *)(int)'
+    ref(tolower)  //tolower doesnt work on the whole string.
+               ^
+..\main.cpp:41:15: note:   couldn't deduce template parameter '_Tp'
+19:17:36 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:41:16: error: no matching function for call to 'ref(<unresolved overloaded function type>)'
+    ref(&tolower)  //tolower doesnt work on the whole string.
+                ^
+In file included from ..\main.cpp:19:0:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:473:5: note: candidate: template<class _Tp> std::reference_wrapper<_Tp> std::ref(_Tp&)
+     ref(_Tp& __t) noexcept
+     ^~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:473:5: note:   template argument deduction/substitution failed:
+..\main.cpp:41:16: note:   couldn't deduce template parameter '_Tp'
+    ref(&tolower)  //tolower doesnt work on the whole string.
+                ^
+In file included from ..\main.cpp:19:0:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:483:10: note: candidate: template<class _Tp> void std::ref(const _Tp&&) <deleted>
+     void ref(const _Tp&&) = delete;
+          ^~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:483:10: note:   template argument deduction/substitution failed:
+..\main.cpp:41:16: note:   couldn't deduce template parameter '_Tp'
+    ref(&tolower)  //tolower doesnt work on the whole string.
+                ^
+In file included from ..\main.cpp:19:0:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:491:5: note: candidate: template<class _Tp> std::reference_wrapper<_Tp> std::ref(std::reference_wrapper<_Tp>)
+     ref(reference_wrapper<_Tp> __t) noexcept
+     ^~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:491:5: note:   template argument deduction/substitution failed:
+..\main.cpp:41:16: note:   mismatched types 'std::reference_wrapper<_Tp>' and 'int (__attribute__((__cdecl__)) *)(int)'
+    ref(&tolower)  //tolower doesnt work on the whole string.
+                ^
+..\main.cpp:41:16: note:   couldn't deduce template parameter '_Tp'
+19:19:20 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:41:17: error: expected primary-expression before 'ref'
+    function<int>ref(tolower)  //tolower doesnt work on the whole string.
+                 ^~~
+19:22:07 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:41:27: error: expected primary-expression before 'tolower'
+    reference_wrapper<int> tolower //tolower doesnt work on the whole string.
+                           ^~~~~~~
+19:22:41 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:41:36: error: no matching function for call to 'std::reference_wrapper<int>::reference_wrapper(<unresolved overloaded function type>)'
+    reference_wrapper<int> (&tolower) //tolower doesnt work on the whole string.
+                                    ^
+In file included from ..\main.cpp:19:0:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:449:7: note: candidate: std::reference_wrapper<_Tp>::reference_wrapper(const std::reference_wrapper<_Tp>&) [with _Tp = int]
+       reference_wrapper(const reference_wrapper&) = default;
+       ^~~~~~~~~~~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:449:7: note:   no known conversion for argument 1 from '<unresolved overloaded function type>' to 'const std::reference_wrapper<int>&'
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:443:7: note: candidate: std::reference_wrapper<_Tp>::reference_wrapper(_Tp&) [with _Tp = int]
+       reference_wrapper(_Tp& __indata) noexcept
+       ^~~~~~~~~~~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:443:7: note:   no known conversion for argument 1 from '<unresolved overloaded function type>' to 'int&'
+19:23:59 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:41:29: error: wrong number of template arguments (2, should be 1)
+    reference_wrapper<int,int> (&tolower) //tolower doesnt work on the whole string.
+                             ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\move.h:57:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\nested_exception.h:40,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\exception:171,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:39,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\main.cpp:14:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\type_traits:2139:11: note: provided for 'template<class _Tp> class std::reference_wrapper'
+     class reference_wrapper;
+           ^~~~~~~~~~~~~~~~~
+19:24:23 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:41:29: error: wrong number of template arguments (2, should be 1)
+    reference_wrapper<int,int> tolower //tolower doesnt work on the whole string.
+                             ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\move.h:57:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\nested_exception.h:40,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\exception:171,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:39,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\main.cpp:14:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\type_traits:2139:11: note: provided for 'template<class _Tp> class std::reference_wrapper'
+     class reference_wrapper;
+           ^~~~~~~~~~~~~~~~~
+19:24:39 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:41:27: error: expected primary-expression before 'tolower'
+    reference_wrapper<int> tolower //tolower doesnt work on the whole string.
+                           ^~~~~~~
+19:25:03 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:41:27: error: expected primary-expression before 'ref'
+    reference_wrapper<int> ref(tolower) //tolower doesnt work on the whole string.
+                           ^~~
+19:25:11 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:41:27: error: expected primary-expression before 'function'
+    reference_wrapper<int> function(tolower) //tolower doesnt work on the whole string.
+                           ^~~~~~~~
+19:42:14 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:36:26: error: conversion from '<unresolved overloaded function type>' to non-scalar type 'std::function<void()>' requested
+   function <void()> lwo= tolower;
+                          ^~~~~~~
+..\main.cpp:42:8: error: invalid use of void expression
+        );     //wrapper <Argument type,Result type> (pointer to a function to create a wrapper for whole string)-&function
+        ^
+19:42:59 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:36:26: error: conversion from '<unresolved overloaded function type>' to non-scalar type 'std::function<void()>' requested
+   function <void()> lwo= &tolower;
+                          ^~~~~~~~
+..\main.cpp:42:8: error: invalid use of void expression
+        );     //wrapper <Argument type,Result type> (pointer to a function to create a wrapper for whole string)-&function
+        ^
+19:56:46 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:36:45: error: no matching function for call to 'bind(<unresolved overloaded function type>)'
+   function <void(int,int)> lwo= bind(tolower);
+                                             ^
+In file included from ..\main.cpp:19:0:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:1322:5: note: candidate: template<class _Func, class ... _BoundArgs> typename std::_Bind_helper<std::__is_socketlike<_Func>::value, _Func, _BoundArgs ...>::type std::bind(_Func&&, _BoundArgs&& ...)
+     bind(_Func&& __f, _BoundArgs&&... __args)
+     ^~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:1322:5: note:   template argument deduction/substitution failed:
+..\main.cpp:36:45: note:   couldn't deduce template parameter '_Func'
+   function <void(int,int)> lwo= bind(tolower);
+                                             ^
+In file included from ..\main.cpp:19:0:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:1350:5: note: candidate: template<class _Result, class _Func, class ... _BoundArgs> typename std::_Bindres_helper<_Result, _Func, _BoundArgs>::type std::bind(_Func&&, _BoundArgs&& ...)
+     bind(_Func&& __f, _BoundArgs&&... __args)
+     ^~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:1350:5: note:   template argument deduction/substitution failed:
+..\main.cpp:36:45: note:   couldn't deduce template parameter '_Result'
+   function <void(int,int)> lwo= bind(tolower);
+                                             ^
+..\main.cpp:41:10: error: no match for call to '(std::function<void(int, int)>) ()'
+      lwo()//tolower doesnt work on the whole string.
+          ^
+In file included from ..\main.cpp:19:0:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:2122:5: note: candidate: _Res std::function<_Res(_ArgTypes ...)>::operator()(_ArgTypes ...) const [with _Res = void; _ArgTypes = {int, int}]
+     function<_Res(_ArgTypes...)>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:2122:5: note:   candidate expects 2 arguments, 0 provided
+19:57:26 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:36:40: error: no matching function for call to 'bind(<unresolved overloaded function type>)'
+   function <int(int)> lwo= bind(tolower);
+                                        ^
+In file included from ..\main.cpp:19:0:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:1322:5: note: candidate: template<class _Func, class ... _BoundArgs> typename std::_Bind_helper<std::__is_socketlike<_Func>::value, _Func, _BoundArgs ...>::type std::bind(_Func&&, _BoundArgs&& ...)
+     bind(_Func&& __f, _BoundArgs&&... __args)
+     ^~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:1322:5: note:   template argument deduction/substitution failed:
+..\main.cpp:36:40: note:   couldn't deduce template parameter '_Func'
+   function <int(int)> lwo= bind(tolower);
+                                        ^
+In file included from ..\main.cpp:19:0:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:1350:5: note: candidate: template<class _Result, class _Func, class ... _BoundArgs> typename std::_Bindres_helper<_Result, _Func, _BoundArgs>::type std::bind(_Func&&, _BoundArgs&& ...)
+     bind(_Func&& __f, _BoundArgs&&... __args)
+     ^~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:1350:5: note:   template argument deduction/substitution failed:
+..\main.cpp:36:40: note:   couldn't deduce template parameter '_Result'
+   function <int(int)> lwo= bind(tolower);
+                                        ^
+..\main.cpp:41:10: error: no match for call to '(std::function<int(int)>) ()'
+      lwo()//tolower doesnt work on the whole string.
+          ^
+In file included from ..\main.cpp:19:0:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:2122:5: note: candidate: _Res std::function<_Res(_ArgTypes ...)>::operator()(_ArgTypes ...) const [with _Res = int; _ArgTypes = {int}]
+     function<_Res(_ArgTypes...)>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:2122:5: note:   candidate expects 1 argument, 0 provided
+19:57:40 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:36:33: error: expected primary-expression before 'int'
+   function <int(int)> lwo= bind(int,tolower);
+                                 ^~~
+..\main.cpp:41:10: error: no match for call to '(std::function<int(int)>) ()'
+      lwo()//tolower doesnt work on the whole string.
+          ^
+In file included from ..\main.cpp:19:0:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:2122:5: note: candidate: _Res std::function<_Res(_ArgTypes ...)>::operator()(_ArgTypes ...) const [with _Res = int; _ArgTypes = {int}]
+     function<_Res(_ArgTypes...)>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:2122:5: note:   candidate expects 1 argument, 0 provided
+19:58:19 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:36:40: error: no matching function for call to 'bind(<unresolved overloaded function type>)'
+   function <int(int)> lwo= bind(tolower);
+                                        ^
+In file included from ..\main.cpp:19:0:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:1322:5: note: candidate: template<class _Func, class ... _BoundArgs> typename std::_Bind_helper<std::__is_socketlike<_Func>::value, _Func, _BoundArgs ...>::type std::bind(_Func&&, _BoundArgs&& ...)
+     bind(_Func&& __f, _BoundArgs&&... __args)
+     ^~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:1322:5: note:   template argument deduction/substitution failed:
+..\main.cpp:36:40: note:   couldn't deduce template parameter '_Func'
+   function <int(int)> lwo= bind(tolower);
+                                        ^
+In file included from ..\main.cpp:19:0:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:1350:5: note: candidate: template<class _Result, class _Func, class ... _BoundArgs> typename std::_Bindres_helper<_Result, _Func, _BoundArgs>::type std::bind(_Func&&, _BoundArgs&& ...)
+     bind(_Func&& __f, _BoundArgs&&... __args)
+     ^~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:1350:5: note:   template argument deduction/substitution failed:
+..\main.cpp:36:40: note:   couldn't deduce template parameter '_Result'
+   function <int(int)> lwo= bind(tolower);
+                                        ^
+19:58:55 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:36:41: error: expected primary-expression before 'int'
+   function <int(int)> lwo= bind(tolower,int);
+                                         ^~~
+19:59:14 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:36:37: error: no matching function for call to 'bind(<unresolved overloaded function type>)'
+   function <int()> lwo= bind(tolower);
+                                     ^
+In file included from ..\main.cpp:19:0:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:1322:5: note: candidate: template<class _Func, class ... _BoundArgs> typename std::_Bind_helper<std::__is_socketlike<_Func>::value, _Func, _BoundArgs ...>::type std::bind(_Func&&, _BoundArgs&& ...)
+     bind(_Func&& __f, _BoundArgs&&... __args)
+     ^~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:1322:5: note:   template argument deduction/substitution failed:
+..\main.cpp:36:37: note:   couldn't deduce template parameter '_Func'
+   function <int()> lwo= bind(tolower);
+                                     ^
+In file included from ..\main.cpp:19:0:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:1350:5: note: candidate: template<class _Result, class _Func, class ... _BoundArgs> typename std::_Bindres_helper<_Result, _Func, _BoundArgs>::type std::bind(_Func&&, _BoundArgs&& ...)
+     bind(_Func&& __f, _BoundArgs&&... __args)
+     ^~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:1350:5: note:   template argument deduction/substitution failed:
+..\main.cpp:36:37: note:   couldn't deduce template parameter '_Result'
+   function <int()> lwo= bind(tolower);
+                                     ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\main.cpp:15:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h: In instantiation of '_OIter std::transform(_IIter, _IIter, _OIter, _UnaryOperation) [with _IIter = __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >; _OIter = __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >; _UnaryOperation = std::function<int()>]':
+..\main.cpp:42:8:   required from here
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: error: no match for call to '(std::function<int()>) (char&)'
+  *__result = __unary_op(*__first);
+              ~~~~~~~~~~^~~~~~~~~~
+In file included from ..\main.cpp:19:0:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:2122:5: note: candidate: _Res std::function<_Res(_ArgTypes ...)>::operator()(_ArgTypes ...) const [with _Res = int; _ArgTypes = {}]
+     function<_Res(_ArgTypes...)>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:2122:5: note:   candidate expects 0 arguments, 1 provided
+19:59:34 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:36:41: error: no matching function for call to 'bind(<unresolved overloaded function type>)'
+   function <void(int)> lwo= bind(tolower);
+                                         ^
+In file included from ..\main.cpp:19:0:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:1322:5: note: candidate: template<class _Func, class ... _BoundArgs> typename std::_Bind_helper<std::__is_socketlike<_Func>::value, _Func, _BoundArgs ...>::type std::bind(_Func&&, _BoundArgs&& ...)
+     bind(_Func&& __f, _BoundArgs&&... __args)
+     ^~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:1322:5: note:   template argument deduction/substitution failed:
+..\main.cpp:36:41: note:   couldn't deduce template parameter '_Func'
+   function <void(int)> lwo= bind(tolower);
+                                         ^
+In file included from ..\main.cpp:19:0:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:1350:5: note: candidate: template<class _Result, class _Func, class ... _BoundArgs> typename std::_Bindres_helper<_Result, _Func, _BoundArgs>::type std::bind(_Func&&, _BoundArgs&& ...)
+     bind(_Func&& __f, _BoundArgs&&... __args)
+     ^~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:1350:5: note:   template argument deduction/substitution failed:
+..\main.cpp:36:41: note:   couldn't deduce template parameter '_Result'
+   function <void(int)> lwo= bind(tolower);
+                                         ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\main.cpp:15:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h: In instantiation of '_OIter std::transform(_IIter, _IIter, _OIter, _UnaryOperation) [with _IIter = __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >; _OIter = __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >; _UnaryOperation = std::function<void(int)>]':
+..\main.cpp:42:8:   required from here
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:12: error: void value not ignored as it ought to be
+  *__result = __unary_op(*__first);
+  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+19:59:50 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:36:42: error: no matching function for call to 'bind(<unresolved overloaded function type>)'
+   function <void(int)> lwo= bind(&tolower);
+                                          ^
+In file included from ..\main.cpp:19:0:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:1322:5: note: candidate: template<class _Func, class ... _BoundArgs> typename std::_Bind_helper<std::__is_socketlike<_Func>::value, _Func, _BoundArgs ...>::type std::bind(_Func&&, _BoundArgs&& ...)
+     bind(_Func&& __f, _BoundArgs&&... __args)
+     ^~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:1322:5: note:   template argument deduction/substitution failed:
+..\main.cpp:36:42: note:   couldn't deduce template parameter '_Func'
+   function <void(int)> lwo= bind(&tolower);
+                                          ^
+In file included from ..\main.cpp:19:0:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:1350:5: note: candidate: template<class _Result, class _Func, class ... _BoundArgs> typename std::_Bindres_helper<_Result, _Func, _BoundArgs>::type std::bind(_Func&&, _BoundArgs&& ...)
+     bind(_Func&& __f, _BoundArgs&&... __args)
+     ^~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:1350:5: note:   template argument deduction/substitution failed:
+..\main.cpp:36:42: note:   couldn't deduce template parameter '_Result'
+   function <void(int)> lwo= bind(&tolower);
+                                          ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\main.cpp:15:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h: In instantiation of '_OIter std::transform(_IIter, _IIter, _OIter, _UnaryOperation) [with _IIter = __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >; _OIter = __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >; _UnaryOperation = std::function<void(int)>]':
+..\main.cpp:42:8:   required from here
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:12: error: void value not ignored as it ought to be
+  *__result = __unary_op(*__first);
+  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+20:05:07 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In function 'int main()':
+..\main.cpp:36:30: error: conversion from '<unresolved overloaded function type>' to non-scalar type 'std::reference_wrapper<int>' requested
+   reference_wrapper<int> x = tolower;
+                              ^~~~~~~
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\main.cpp:15:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h: In instantiation of '_OIter std::transform(_IIter, _IIter, _OIter, _UnaryOperation) [with _IIter = __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >; _OIter = __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >; _UnaryOperation = std::reference_wrapper<int>]':
+..\main.cpp:42:8:   required from here
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: error: no match for call to '(std::reference_wrapper<int>) (char&)'
+  *__result = __unary_op(*__first);
+              ~~~~~~~~~~^~~~~~~~~~
+In file included from ..\main.cpp:19:0:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:463:2: note: candidate: template<class ... _Args> typename std::result_of<_Tp&(_Args&& ...)>::type std::reference_wrapper<_Tp>::operator()(_Args&& ...) const [with _Args = {_Args ...}; _Tp = int]
+  operator()(_Args&&... __args) const
+  ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:463:2: note:   template argument deduction/substitution failed:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional: In substitution of 'template<class ... _Args> typename std::result_of<_Tp&(_Args&& ...)>::type std::reference_wrapper<_Tp>::operator()(_Args&& ...) const [with _Args = {char&}]':
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24:   required from '_OIter std::transform(_IIter, _IIter, _OIter, _UnaryOperation) [with _IIter = __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >; _OIter = __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >; _UnaryOperation = std::reference_wrapper<int>]'
+..\main.cpp:42:8:   required from here
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:463:2: error: no type named 'type' in 'class std::result_of<int&(char&)>'
+20:20:40 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o ShakespeareQuicksort.exe main.o 
+20:21:21 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o ShakespeareQuicksort.exe main.o 
+Info: Nothing to build for ShakespeareQuicksort
+20:25:55 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\main.cpp:15:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h: In instantiation of '_OIter std::transform(_IIter, _IIter, _OIter, _UnaryOperation) [with _IIter = __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >; _OIter = __gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> >; _UnaryOperation = main()::<lambda(int)>]':
+..\main.cpp:42:8:   required from here
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: error: no match for call to '(main()::<lambda(int)>) (char&)'
+  *__result = __unary_op(*__first);
+              ~~~~~~~~~~^~~~~~~~~~
+..\main.cpp:41:18: note: candidate: template<int <anonymous> > main()::<lambda(int)>::operator decltype (((const main()::<lambda(int)>*)((const main()::<lambda(int)>* const)0u))->operator()(static_cast<int&&>(<anonymous>))) (*)(int)() const
+     []<int>(int c) {return tolower(c);}//tolower doesnt work on the whole string.
+                  ^
+..\main.cpp:41:18: note:   template argument deduction/substitution failed:
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\main.cpp:15:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: note:   couldn't deduce template parameter '<anonymous>'
+  *__result = __unary_op(*__first);
+              ~~~~~~~~~~^~~~~~~~~~
+..\main.cpp:41:18: note: candidate: template<int <anonymous> > main()::<lambda(int)>
+     []<int>(int c) {return tolower(c);}//tolower doesnt work on the whole string.
+                  ^
+..\main.cpp:41:18: note:   template argument deduction/substitution failed:
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\main.cpp:15:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: note:   couldn't deduce template parameter '<anonymous>'
+  *__result = __unary_op(*__first);
+              ~~~~~~~~~~^~~~~~~~~~
+20:55:43 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o ShakespeareQuicksort.exe main.o 
+Info: Nothing to build for ShakespeareQuicksort
+22:09:53 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In instantiation of 'main()::<lambda(auto:1)> [with auto:1 = std::__cxx11::basic_string<char>]':
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24:   required from '_OIter std::transform(_IIter, _IIter, _OIter, _UnaryOperation) [with _IIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _OIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _UnaryOperation = main()::<lambda(auto:1)>]'
+..\main.cpp:42:8:   required from here
+..\main.cpp:41:31: error: no matching function for call to 'tolower(std::__cxx11::basic_string<char>&)'
+     [](auto c) {return tolower(c);}//tolower doesnt work on the whole string.
+                        ~~~~~~~^~~
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cctype:42:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\localefwd.h:42,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:41,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\main.cpp:14:
+c:\mingw\include\ctype.h:95:38: note: candidate: int tolower(int)
+ _CRTIMP __cdecl __MINGW_NOTHROW  int tolower (int);
+                                      ^~~~~~~
+c:\mingw\include\ctype.h:95:38: note:   no known conversion for argument 1 from 'std::__cxx11::basic_string<char>' to 'int'
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_ios.h:37:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:44,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\main.cpp:14:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_facets.h:2645:5: note: candidate: template<class _CharT> _CharT std::tolower(_CharT, const std::locale&)
+     tolower(_CharT __c, const locale& __loc)
+     ^~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_facets.h:2645:5: note:   template argument deduction/substitution failed:
+..\main.cpp:41:31: note:   candidate expects 2 arguments, 1 provided
+     [](auto c) {return tolower(c);}//tolower doesnt work on the whole string.
+                        ~~~~~~~^~~
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\main.cpp:15:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h: In instantiation of '_OIter std::transform(_IIter, _IIter, _OIter, _UnaryOperation) [with _IIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _OIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _UnaryOperation = main()::<lambda(auto:1)>]':
+..\main.cpp:42:8:   required from here
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:12: error: no match for 'operator=' (operand types are 'std::__cxx11::basic_string<char>' and 'void')
+  *__result = __unary_op(*__first);
+  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\string:52:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_classes.h:40,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ios_base.h:41,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:42,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\main.cpp:14:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:565:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       operator=(const basic_string& __str)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:565:7: note:   no known conversion for argument 1 from 'void' to 'const std::__cxx11::basic_string<char>&'
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:589:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       operator=(const _CharT* __s)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:589:7: note:   no known conversion for argument 1 from 'void' to 'const char*'
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:600:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(_CharT) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       operator=(_CharT __c)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:600:7: note:   no known conversion for argument 1 from 'void' to 'char'
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:618:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       operator=(basic_string&& __str)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:618:7: note:   no known conversion for argument 1 from 'void' to 'std::__cxx11::basic_string<char>&&'
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:672:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(std::initializer_list<_Tp>) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       operator=(initializer_list<_CharT> __l)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:672:7: note:   no known conversion for argument 1 from 'void' to 'std::initializer_list<char>'
+22:11:07 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\main.cpp:15:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h: In instantiation of '_OIter std::transform(_IIter, _IIter, _OIter, _UnaryOperation) [with _IIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _OIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _UnaryOperation = main()::<lambda(int)>]':
+..\main.cpp:42:8:   required from here
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: error: no match for call to '(main()::<lambda(int)>) (std::__cxx11::basic_string<char>&)'
+  *__result = __unary_op(*__first);
+              ~~~~~~~~~~^~~~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: note: candidate: int (*)(int) <conversion>
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: note:   candidate expects 2 arguments, 2 provided
+..\main.cpp:41:13: note: candidate: main()::<lambda(int)>
+     [](int c) {return tolower(c);}//tolower doesnt work on the whole string.
+             ^
+..\main.cpp:41:13: note:   no known conversion for argument 1 from 'std::__cxx11::basic_string<char>' to 'int'
+22:12:07 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In instantiation of 'main()::<lambda(auto:1)> [with auto:1 = std::__cxx11::basic_string<char>]':
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24:   required from '_OIter std::transform(_IIter, _IIter, _OIter, _UnaryOperation) [with _IIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _OIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _UnaryOperation = main()::<lambda(auto:1)>]'
+..\main.cpp:42:8:   required from here
+..\main.cpp:41:31: error: no matching function for call to 'tolower(std::__cxx11::basic_string<char>&)'
+     [](auto n) {return tolower(n);}//tolower doesnt work on the whole string.
+                        ~~~~~~~^~~
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cctype:42:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\localefwd.h:42,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:41,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\main.cpp:14:
+c:\mingw\include\ctype.h:95:38: note: candidate: int tolower(int)
+ _CRTIMP __cdecl __MINGW_NOTHROW  int tolower (int);
+                                      ^~~~~~~
+c:\mingw\include\ctype.h:95:38: note:   no known conversion for argument 1 from 'std::__cxx11::basic_string<char>' to 'int'
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_ios.h:37:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:44,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\main.cpp:14:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_facets.h:2645:5: note: candidate: template<class _CharT> _CharT std::tolower(_CharT, const std::locale&)
+     tolower(_CharT __c, const locale& __loc)
+     ^~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_facets.h:2645:5: note:   template argument deduction/substitution failed:
+..\main.cpp:41:31: note:   candidate expects 2 arguments, 1 provided
+     [](auto n) {return tolower(n);}//tolower doesnt work on the whole string.
+                        ~~~~~~~^~~
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\main.cpp:15:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h: In instantiation of '_OIter std::transform(_IIter, _IIter, _OIter, _UnaryOperation) [with _IIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _OIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _UnaryOperation = main()::<lambda(auto:1)>]':
+..\main.cpp:42:8:   required from here
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:12: error: no match for 'operator=' (operand types are 'std::__cxx11::basic_string<char>' and 'void')
+  *__result = __unary_op(*__first);
+  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\string:52:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_classes.h:40,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ios_base.h:41,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:42,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\main.cpp:14:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:565:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       operator=(const basic_string& __str)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:565:7: note:   no known conversion for argument 1 from 'void' to 'const std::__cxx11::basic_string<char>&'
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:589:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       operator=(const _CharT* __s)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:589:7: note:   no known conversion for argument 1 from 'void' to 'const char*'
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:600:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(_CharT) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       operator=(_CharT __c)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:600:7: note:   no known conversion for argument 1 from 'void' to 'char'
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:618:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       operator=(basic_string&& __str)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:618:7: note:   no known conversion for argument 1 from 'void' to 'std::__cxx11::basic_string<char>&&'
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:672:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(std::initializer_list<_Tp>) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       operator=(initializer_list<_CharT> __l)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:672:7: note:   no known conversion for argument 1 from 'void' to 'std::initializer_list<char>'
+22:12:26 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o ShakespeareQuicksort.exe main.o 
+22:17:47 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In instantiation of 'main()::<lambda(auto:1)> [with auto:1 = std::__cxx11::basic_string<char>]':
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24:   required from '_OIter std::transform(_IIter, _IIter, _OIter, _UnaryOperation) [with _IIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _OIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _UnaryOperation = main()::<lambda(auto:1)>]'
+..\main.cpp:41:8:   required from here
+..\main.cpp:40:31: error: no matching function for call to 'tolower(std::__cxx11::basic_string<char>&)'
+     [](auto c) {return tolower(c);}//tolower doesnt work on the whole string.
+                        ~~~~~~~^~~
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cctype:42:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\localefwd.h:42,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:41,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\main.cpp:14:
+c:\mingw\include\ctype.h:95:38: note: candidate: int tolower(int)
+ _CRTIMP __cdecl __MINGW_NOTHROW  int tolower (int);
+                                      ^~~~~~~
+c:\mingw\include\ctype.h:95:38: note:   no known conversion for argument 1 from 'std::__cxx11::basic_string<char>' to 'int'
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_ios.h:37:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:44,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\main.cpp:14:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_facets.h:2645:5: note: candidate: template<class _CharT> _CharT std::tolower(_CharT, const std::locale&)
+     tolower(_CharT __c, const locale& __loc)
+     ^~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_facets.h:2645:5: note:   template argument deduction/substitution failed:
+..\main.cpp:40:31: note:   candidate expects 2 arguments, 1 provided
+     [](auto c) {return tolower(c);}//tolower doesnt work on the whole string.
+                        ~~~~~~~^~~
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\main.cpp:15:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h: In instantiation of '_OIter std::transform(_IIter, _IIter, _OIter, _UnaryOperation) [with _IIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _OIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _UnaryOperation = main()::<lambda(auto:1)>]':
+..\main.cpp:41:8:   required from here
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:12: error: no match for 'operator=' (operand types are 'std::__cxx11::basic_string<char>' and 'void')
+  *__result = __unary_op(*__first);
+  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\string:52:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_classes.h:40,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ios_base.h:41,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:42,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\main.cpp:14:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:565:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       operator=(const basic_string& __str)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:565:7: note:   no known conversion for argument 1 from 'void' to 'const std::__cxx11::basic_string<char>&'
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:589:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       operator=(const _CharT* __s)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:589:7: note:   no known conversion for argument 1 from 'void' to 'const char*'
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:600:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(_CharT) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       operator=(_CharT __c)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:600:7: note:   no known conversion for argument 1 from 'void' to 'char'
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:618:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       operator=(basic_string&& __str)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:618:7: note:   no known conversion for argument 1 from 'void' to 'std::__cxx11::basic_string<char>&&'
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:672:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(std::initializer_list<_Tp>) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       operator=(initializer_list<_CharT> __l)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:672:7: note:   no known conversion for argument 1 from 'void' to 'std::initializer_list<char>'
+22:19:28 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In lambda function:
+..\main.cpp:40:30: error: 'n' is not captured
+     [](char) {return tolower(n);}//tolower doesnt work on the whole string.
+                              ^
+..\main.cpp:40:6: note: the lambda has no capture-default
+     [](char) {return tolower(n);}//tolower doesnt work on the whole string.
+      ^
+..\main.cpp:33:14: note: 'std::__cxx11::basic_string<char> n' declared here
+    for (auto n: words) //we analyze every string. we should use auto to make use of STL and vector
+              ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\main.cpp:15:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h: In instantiation of '_OIter std::transform(_IIter, _IIter, _OIter, _UnaryOperation) [with _IIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _OIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _UnaryOperation = main()::<lambda(char)>]':
+..\main.cpp:41:8:   required from here
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: error: no match for call to '(main()::<lambda(char)>) (std::__cxx11::basic_string<char>&)'
+  *__result = __unary_op(*__first);
+              ~~~~~~~~~~^~~~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: note: candidate: void (*)(char) <conversion>
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: note:   candidate expects 2 arguments, 2 provided
+..\main.cpp:40:12: note: candidate: main()::<lambda(char)>
+     [](char) {return tolower(n);}//tolower doesnt work on the whole string.
             ^
-In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\vector:64:0,
-                 from ..\main.cpp:10:
-c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h:780:7: note: candidate: std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::operator[](std::vector<_Tp, _Alloc>::size_type) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::reference = int&; std::vector<_Tp, _Alloc>::size_type = unsigned int]
-       operator[](size_type __n) _GLIBCXX_NOEXCEPT
+..\main.cpp:40:12: note:   no known conversion for argument 1 from 'std::__cxx11::basic_string<char>' to 'char'
+22:19:35 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In lambda function:
+..\main.cpp:40:26: error: 'n' is not captured
+     []() {return tolower(n);}//tolower doesnt work on the whole string.
+                          ^
+..\main.cpp:40:6: note: the lambda has no capture-default
+     []() {return tolower(n);}//tolower doesnt work on the whole string.
+      ^
+..\main.cpp:33:14: note: 'std::__cxx11::basic_string<char> n' declared here
+    for (auto n: words) //we analyze every string. we should use auto to make use of STL and vector
+              ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\main.cpp:15:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h: In instantiation of '_OIter std::transform(_IIter, _IIter, _OIter, _UnaryOperation) [with _IIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _OIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _UnaryOperation = main()::<lambda()>]':
+..\main.cpp:41:8:   required from here
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: error: no match for call to '(main()::<lambda()>) (std::__cxx11::basic_string<char>&)'
+  *__result = __unary_op(*__first);
+              ~~~~~~~~~~^~~~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: note: candidate: void (*)() <conversion>
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: note:   candidate expects 1 argument, 2 provided
+..\main.cpp:40:8: note: candidate: main()::<lambda()>
+     []() {return tolower(n);}//tolower doesnt work on the whole string.
+        ^
+..\main.cpp:40:8: note:   candidate expects 0 arguments, 1 provided
+22:19:37 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In lambda function:
+..\main.cpp:40:26: error: 'n' is not captured
+     []() {return tolower(n);}//tolower doesnt work on the whole string.
+                          ^
+..\main.cpp:40:6: note: the lambda has no capture-default
+     []() {return tolower(n);}//tolower doesnt work on the whole string.
+      ^
+..\main.cpp:33:14: note: 'std::__cxx11::basic_string<char> n' declared here
+    for (auto n: words) //we analyze every string. we should use auto to make use of STL and vector
+              ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\main.cpp:15:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h: In instantiation of '_OIter std::transform(_IIter, _IIter, _OIter, _UnaryOperation) [with _IIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _OIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _UnaryOperation = main()::<lambda()>]':
+..\main.cpp:41:8:   required from here
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: error: no match for call to '(main()::<lambda()>) (std::__cxx11::basic_string<char>&)'
+  *__result = __unary_op(*__first);
+              ~~~~~~~~~~^~~~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: note: candidate: void (*)() <conversion>
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: note:   candidate expects 1 argument, 2 provided
+..\main.cpp:40:8: note: candidate: main()::<lambda()>
+     []() {return tolower(n);}//tolower doesnt work on the whole string.
+        ^
+..\main.cpp:40:8: note:   candidate expects 0 arguments, 1 provided
+22:20:33 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In lambda function:
+..\main.cpp:40:24: error: 'n' is not captured
+     [] {return tolower(n);}//tolower doesnt work on the whole string.
+                        ^
+..\main.cpp:40:6: note: the lambda has no capture-default
+     [] {return tolower(n);}//tolower doesnt work on the whole string.
+      ^
+..\main.cpp:33:14: note: 'std::__cxx11::basic_string<char> n' declared here
+    for (auto n: words) //we analyze every string. we should use auto to make use of STL and vector
+              ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\main.cpp:15:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h: In instantiation of '_OIter std::transform(_IIter, _IIter, _OIter, _UnaryOperation) [with _IIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _OIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _UnaryOperation = main()::<lambda()>]':
+..\main.cpp:41:8:   required from here
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: error: no match for call to '(main()::<lambda()>) (std::__cxx11::basic_string<char>&)'
+  *__result = __unary_op(*__first);
+              ~~~~~~~~~~^~~~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: note: candidate: void (*)() <conversion>
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: note:   candidate expects 1 argument, 2 provided
+..\main.cpp:40:6: note: candidate: main()::<lambda()>
+     [] {return tolower(n);}//tolower doesnt work on the whole string.
+      ^
+..\main.cpp:40:6: note:   candidate expects 0 arguments, 1 provided
+22:20:43 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In lambda function:
+..\main.cpp:40:18: error: 'n' is not captured
+     [] { tolower(n);}//tolower doesnt work on the whole string.
+                  ^
+..\main.cpp:40:6: note: the lambda has no capture-default
+     [] { tolower(n);}//tolower doesnt work on the whole string.
+      ^
+..\main.cpp:33:14: note: 'std::__cxx11::basic_string<char> n' declared here
+    for (auto n: words) //we analyze every string. we should use auto to make use of STL and vector
+              ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\main.cpp:15:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h: In instantiation of '_OIter std::transform(_IIter, _IIter, _OIter, _UnaryOperation) [with _IIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _OIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _UnaryOperation = main()::<lambda()>]':
+..\main.cpp:41:8:   required from here
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: error: no match for call to '(main()::<lambda()>) (std::__cxx11::basic_string<char>&)'
+  *__result = __unary_op(*__first);
+              ~~~~~~~~~~^~~~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: note: candidate: void (*)() <conversion>
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: note:   candidate expects 1 argument, 2 provided
+..\main.cpp:40:6: note: candidate: main()::<lambda()>
+     [] { tolower(n);}//tolower doesnt work on the whole string.
+      ^
+..\main.cpp:40:6: note:   candidate expects 0 arguments, 1 provided
+22:23:28 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In lambda function:
+..\main.cpp:40:34: error: no matching function for call to 'tolower(const std::__cxx11::basic_string<char>&)'
+     [=]()->auto {return tolower(n);}//tolower doesnt work on the whole string.
+                                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cctype:42:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\localefwd.h:42,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:41,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\main.cpp:14:
+c:\mingw\include\ctype.h:95:38: note: candidate: int tolower(int)
+ _CRTIMP __cdecl __MINGW_NOTHROW  int tolower (int);
+                                      ^~~~~~~
+c:\mingw\include\ctype.h:95:38: note:   no known conversion for argument 1 from 'const std::__cxx11::basic_string<char>' to 'int'
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_ios.h:37:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:44,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\main.cpp:14:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_facets.h:2645:5: note: candidate: template<class _CharT> _CharT std::tolower(_CharT, const std::locale&)
+     tolower(_CharT __c, const locale& __loc)
+     ^~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_facets.h:2645:5: note:   template argument deduction/substitution failed:
+..\main.cpp:40:34: note:   candidate expects 2 arguments, 1 provided
+     [=]()->auto {return tolower(n);}//tolower doesnt work on the whole string.
+                                  ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\main.cpp:15:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h: In instantiation of '_OIter std::transform(_IIter, _IIter, _OIter, _UnaryOperation) [with _IIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _OIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _UnaryOperation = main()::<lambda()>]':
+..\main.cpp:41:8:   required from here
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: error: no match for call to '(main()::<lambda()>) (std::__cxx11::basic_string<char>&)'
+  *__result = __unary_op(*__first);
+              ~~~~~~~~~~^~~~~~~~~~
+..\main.cpp:40:12: note: candidate: main()::<lambda()>
+     [=]()->auto {return tolower(n);}//tolower doesnt work on the whole string.
+            ^~~~
+..\main.cpp:40:12: note:   candidate expects 0 arguments, 1 provided
+22:27:55 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In lambda function:
+..\main.cpp:40:40: error: no matching function for call to 'tolower(std::__cxx11::basic_string<char>&)'
+     [](decltype(n) a) {return tolower(a);}//tolower doesnt work on the whole string.
+                                        ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cctype:42:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\localefwd.h:42,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:41,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\main.cpp:14:
+c:\mingw\include\ctype.h:95:38: note: candidate: int tolower(int)
+ _CRTIMP __cdecl __MINGW_NOTHROW  int tolower (int);
+                                      ^~~~~~~
+c:\mingw\include\ctype.h:95:38: note:   no known conversion for argument 1 from 'std::__cxx11::basic_string<char>' to 'int'
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_ios.h:37:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:44,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\main.cpp:14:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_facets.h:2645:5: note: candidate: template<class _CharT> _CharT std::tolower(_CharT, const std::locale&)
+     tolower(_CharT __c, const locale& __loc)
+     ^~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_facets.h:2645:5: note:   template argument deduction/substitution failed:
+..\main.cpp:40:40: note:   candidate expects 2 arguments, 1 provided
+     [](decltype(n) a) {return tolower(a);}//tolower doesnt work on the whole string.
+                                        ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\main.cpp:15:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h: In instantiation of '_OIter std::transform(_IIter, _IIter, _OIter, _UnaryOperation) [with _IIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _OIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _UnaryOperation = main()::<lambda(std::__cxx11::basic_string<char>)>]':
+..\main.cpp:41:8:   required from here
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:12: error: no match for 'operator=' (operand types are 'std::__cxx11::basic_string<char>' and 'void')
+  *__result = __unary_op(*__first);
+  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\string:52:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_classes.h:40,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ios_base.h:41,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:42,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\main.cpp:14:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:565:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       operator=(const basic_string& __str)
        ^~~~~~~~
-c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h:780:7: note:   no known conversion for argument 1 from 'std::istream_iterator<int>' to 'std::vector<int>::size_type {aka unsigned int}'
-c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h:795:7: note: candidate: std::vector<_Tp, _Alloc>::const_reference std::vector<_Tp, _Alloc>::operator[](std::vector<_Tp, _Alloc>::size_type) const [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::const_reference = const int&; std::vector<_Tp, _Alloc>::size_type = unsigned int]
-       operator[](size_type __n) const _GLIBCXX_NOEXCEPT
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:565:7: note:   no known conversion for argument 1 from 'void' to 'const std::__cxx11::basic_string<char>&'
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:589:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       operator=(const _CharT* __s)
        ^~~~~~~~
-c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h:795:7: note:   no known conversion for argument 1 from 'std::istream_iterator<int>' to 'std::vector<int>::size_type {aka unsigned int}'
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:589:7: note:   no known conversion for argument 1 from 'void' to 'const char*'
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:600:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(_CharT) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       operator=(_CharT __c)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:600:7: note:   no known conversion for argument 1 from 'void' to 'char'
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:618:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       operator=(basic_string&& __str)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:618:7: note:   no known conversion for argument 1 from 'void' to 'std::__cxx11::basic_string<char>&&'
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:672:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(std::initializer_list<_Tp>) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       operator=(initializer_list<_CharT> __l)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:672:7: note:   no known conversion for argument 1 from 'void' to 'std::initializer_list<char>'
+22:28:47 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In lambda function:
+..\main.cpp:40:42: error: no matching function for call to 'tolower(std::__cxx11::basic_string<char>&)'
+     [](decltype((n)) a) {return tolower(a);}//tolower doesnt work on the whole string.
+                                          ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cctype:42:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\localefwd.h:42,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:41,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\main.cpp:14:
+c:\mingw\include\ctype.h:95:38: note: candidate: int tolower(int)
+ _CRTIMP __cdecl __MINGW_NOTHROW  int tolower (int);
+                                      ^~~~~~~
+c:\mingw\include\ctype.h:95:38: note:   no known conversion for argument 1 from 'std::__cxx11::basic_string<char>' to 'int'
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_ios.h:37:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:44,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\main.cpp:14:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_facets.h:2645:5: note: candidate: template<class _CharT> _CharT std::tolower(_CharT, const std::locale&)
+     tolower(_CharT __c, const locale& __loc)
+     ^~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_facets.h:2645:5: note:   template argument deduction/substitution failed:
+..\main.cpp:40:42: note:   candidate expects 2 arguments, 1 provided
+     [](decltype((n)) a) {return tolower(a);}//tolower doesnt work on the whole string.
+                                          ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\main.cpp:15:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h: In instantiation of '_OIter std::transform(_IIter, _IIter, _OIter, _UnaryOperation) [with _IIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _OIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _UnaryOperation = main()::<lambda(std::__cxx11::basic_string<char>&)>]':
+..\main.cpp:41:8:   required from here
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:12: error: no match for 'operator=' (operand types are 'std::__cxx11::basic_string<char>' and 'void')
+  *__result = __unary_op(*__first);
+  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\string:52:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_classes.h:40,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ios_base.h:41,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:42,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\main.cpp:14:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:565:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       operator=(const basic_string& __str)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:565:7: note:   no known conversion for argument 1 from 'void' to 'const std::__cxx11::basic_string<char>&'
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:589:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       operator=(const _CharT* __s)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:589:7: note:   no known conversion for argument 1 from 'void' to 'const char*'
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:600:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(_CharT) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       operator=(_CharT __c)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:600:7: note:   no known conversion for argument 1 from 'void' to 'char'
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:618:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       operator=(basic_string&& __str)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:618:7: note:   no known conversion for argument 1 from 'void' to 'std::__cxx11::basic_string<char>&&'
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:672:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(std::initializer_list<_Tp>) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       operator=(initializer_list<_CharT> __l)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:672:7: note:   no known conversion for argument 1 from 'void' to 'std::initializer_list<char>'
+22:29:25 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In lambda function:
+..\main.cpp:40:46: error: no matching function for call to 'tolower(std::vector<std::__cxx11::basic_string<char> >&)'
+     [](decltype((words)) a) {return tolower(a);}//tolower doesnt work on the whole string.
+                                              ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cctype:42:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\localefwd.h:42,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:41,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\main.cpp:14:
+c:\mingw\include\ctype.h:95:38: note: candidate: int tolower(int)
+ _CRTIMP __cdecl __MINGW_NOTHROW  int tolower (int);
+                                      ^~~~~~~
+c:\mingw\include\ctype.h:95:38: note:   no known conversion for argument 1 from 'std::vector<std::__cxx11::basic_string<char> >' to 'int'
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_ios.h:37:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:44,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\main.cpp:14:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_facets.h:2645:5: note: candidate: template<class _CharT> _CharT std::tolower(_CharT, const std::locale&)
+     tolower(_CharT __c, const locale& __loc)
+     ^~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_facets.h:2645:5: note:   template argument deduction/substitution failed:
+..\main.cpp:40:46: note:   candidate expects 2 arguments, 1 provided
+     [](decltype((words)) a) {return tolower(a);}//tolower doesnt work on the whole string.
+                                              ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\main.cpp:15:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h: In instantiation of '_OIter std::transform(_IIter, _IIter, _OIter, _UnaryOperation) [with _IIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _OIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _UnaryOperation = main()::<lambda(std::vector<std::__cxx11::basic_string<char> >&)>]':
+..\main.cpp:41:8:   required from here
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: error: no match for call to '(main()::<lambda(std::vector<std::__cxx11::basic_string<char> >&)>) (std::__cxx11::basic_string<char>&)'
+  *__result = __unary_op(*__first);
+              ~~~~~~~~~~^~~~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: note: candidate: void (*)(std::vector<std::__cxx11::basic_string<char> >&) <conversion>
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: note:   candidate expects 2 arguments, 2 provided
+..\main.cpp:40:27: note: candidate: main()::<lambda(std::vector<std::__cxx11::basic_string<char> >&)>
+     [](decltype((words)) a) {return tolower(a);}//tolower doesnt work on the whole string.
+                           ^
+..\main.cpp:40:27: note:   no known conversion for argument 1 from 'std::__cxx11::basic_string<char>' to 'std::vector<std::__cxx11::basic_string<char> >&'
+22:29:49 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In lambda function:
+..\main.cpp:40:44: error: no matching function for call to 'tolower(std::vector<std::__cxx11::basic_string<char> >&)'
+     [](decltype(words) a) {return tolower(a);}//tolower doesnt work on the whole string.
+                                            ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cctype:42:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\localefwd.h:42,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:41,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\main.cpp:14:
+c:\mingw\include\ctype.h:95:38: note: candidate: int tolower(int)
+ _CRTIMP __cdecl __MINGW_NOTHROW  int tolower (int);
+                                      ^~~~~~~
+c:\mingw\include\ctype.h:95:38: note:   no known conversion for argument 1 from 'std::vector<std::__cxx11::basic_string<char> >' to 'int'
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_ios.h:37:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:44,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\main.cpp:14:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_facets.h:2645:5: note: candidate: template<class _CharT> _CharT std::tolower(_CharT, const std::locale&)
+     tolower(_CharT __c, const locale& __loc)
+     ^~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_facets.h:2645:5: note:   template argument deduction/substitution failed:
+..\main.cpp:40:44: note:   candidate expects 2 arguments, 1 provided
+     [](decltype(words) a) {return tolower(a);}//tolower doesnt work on the whole string.
+                                            ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\main.cpp:15:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h: In instantiation of '_OIter std::transform(_IIter, _IIter, _OIter, _UnaryOperation) [with _IIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _OIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _UnaryOperation = main()::<lambda(std::vector<std::__cxx11::basic_string<char> >)>]':
+..\main.cpp:41:8:   required from here
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: error: no match for call to '(main()::<lambda(std::vector<std::__cxx11::basic_string<char> >)>) (std::__cxx11::basic_string<char>&)'
+  *__result = __unary_op(*__first);
+              ~~~~~~~~~~^~~~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: note: candidate: void (*)(std::vector<std::__cxx11::basic_string<char> >) <conversion>
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: note:   candidate expects 2 arguments, 2 provided
+..\main.cpp:40:25: note: candidate: main()::<lambda(std::vector<std::__cxx11::basic_string<char> >)>
+     [](decltype(words) a) {return tolower(a);}//tolower doesnt work on the whole string.
+                         ^
+..\main.cpp:40:25: note:   no known conversion for argument 1 from 'std::__cxx11::basic_string<char>' to 'std::vector<std::__cxx11::basic_string<char> >'
+22:30:38 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o ShakespeareQuicksort.exe main.o 
+22:31:06 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o ShakespeareQuicksort.exe main.o 
+22:31:41 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\main.cpp:15:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h: In instantiation of '_OIter std::transform(_IIter, _IIter, _OIter, _UnaryOperation) [with _IIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _OIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _UnaryOperation = main()::<lambda(int)>]':
+..\main.cpp:41:8:   required from here
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: error: no match for call to '(main()::<lambda(int)>) (std::__cxx11::basic_string<char>&)'
+  *__result = __unary_op(*__first);
+              ~~~~~~~~~~^~~~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: note: candidate: int (*)(int) <conversion>
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: note:   candidate expects 2 arguments, 2 provided
+..\main.cpp:40:13: note: candidate: main()::<lambda(int)>
+     [](int a) {return tolower(a);}//tolower doesnt work on the whole string.
+             ^
+..\main.cpp:40:13: note:   no known conversion for argument 1 from 'std::__cxx11::basic_string<char>' to 'int'
+22:34:13 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\main.cpp:15:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h: In instantiation of '_OIter std::transform(_IIter, _IIter, _OIter, _UnaryOperation) [with _IIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _OIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _UnaryOperation = main()::<lambda(char)>]':
+..\main.cpp:41:8:   required from here
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: error: no match for call to '(main()::<lambda(char)>) (std::__cxx11::basic_string<char>&)'
+  *__result = __unary_op(*__first);
+              ~~~~~~~~~~^~~~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: note: candidate: int (*)(char) <conversion>
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:24: note:   candidate expects 2 arguments, 2 provided
+..\main.cpp:40:14: note: candidate: main()::<lambda(char)>
+     [](char a) {return tolower(a);}//tolower doesnt work on the whole string.
+              ^
+..\main.cpp:40:14: note:   no known conversion for argument 1 from 'std::__cxx11::basic_string<char>' to 'char'
+22:34:46 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp: In lambda function:
+..\main.cpp:40:35: error: no matching function for call to 'tolower(std::__cxx11::string&)'
+     [](string a) {return tolower(a);}//tolower doesnt work on the whole string.
+                                   ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cctype:42:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\localefwd.h:42,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:41,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\main.cpp:14:
+c:\mingw\include\ctype.h:95:38: note: candidate: int tolower(int)
+ _CRTIMP __cdecl __MINGW_NOTHROW  int tolower (int);
+                                      ^~~~~~~
+c:\mingw\include\ctype.h:95:38: note:   no known conversion for argument 1 from 'std::__cxx11::string {aka std::__cxx11::basic_string<char>}' to 'int'
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_ios.h:37:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:44,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\main.cpp:14:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_facets.h:2645:5: note: candidate: template<class _CharT> _CharT std::tolower(_CharT, const std::locale&)
+     tolower(_CharT __c, const locale& __loc)
+     ^~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_facets.h:2645:5: note:   template argument deduction/substitution failed:
+..\main.cpp:40:35: note:   candidate expects 2 arguments, 1 provided
+     [](string a) {return tolower(a);}//tolower doesnt work on the whole string.
+                                   ^
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\main.cpp:15:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h: In instantiation of '_OIter std::transform(_IIter, _IIter, _OIter, _UnaryOperation) [with _IIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _OIter = __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _UnaryOperation = main()::<lambda(std::__cxx11::string)>]':
+..\main.cpp:41:8:   required from here
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4177:12: error: no match for 'operator=' (operand types are 'std::__cxx11::basic_string<char>' and 'void')
+  *__result = __unary_op(*__first);
+  ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\string:52:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_classes.h:40,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ios_base.h:41,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:42,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\main.cpp:14:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:565:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       operator=(const basic_string& __str)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:565:7: note:   no known conversion for argument 1 from 'void' to 'const std::__cxx11::basic_string<char>&'
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:589:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       operator=(const _CharT* __s)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:589:7: note:   no known conversion for argument 1 from 'void' to 'const char*'
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:600:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(_CharT) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       operator=(_CharT __c)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:600:7: note:   no known conversion for argument 1 from 'void' to 'char'
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:618:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       operator=(basic_string&& __str)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:618:7: note:   no known conversion for argument 1 from 'void' to 'std::__cxx11::basic_string<char>&&'
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:672:7: note: candidate: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>& std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::operator=(std::initializer_list<_Tp>) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       operator=(initializer_list<_CharT> __l)
+       ^~~~~~~~
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:672:7: note:   no known conversion for argument 1 from 'void' to 'std::initializer_list<char>'
+22:35:38 **** Incremental Build of configuration Debug for project ShakespeareQuicksort ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o ShakespeareQuicksort.exe main.o 
+Info: Nothing to build for ShakespeareQuicksort
+Info: Nothing to build for MST
+Info: Nothing to build for ShakespeareQuicksort
